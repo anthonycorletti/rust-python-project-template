@@ -2,6 +2,12 @@
 
 Assuming you have cloned this repository to your local machine, you can follow these guidelines to make contributions.
 
+## Rust
+
+Make sure you have the latest stable version of Rust installed. You can check this by running `rustc --version`. If you don't have it installed, you can get it from [here](https://www.rust-lang.org/tools/install).
+
+## Python
+
 **First, please install pyenv https://github.com/pyenv/pyenv to manage your python environment.**
 
 Install the version of python as mentioned in this repo.
@@ -10,7 +16,7 @@ Install the version of python as mentioned in this repo.
 pyenv install $(cat .python-version)
 ```
 
-## Use a virtual environment
+### Use a virtual environment
 
 ```sh
 python -m venv .venv
@@ -32,24 +38,20 @@ which python pip
 
 You should see paths that use the .venv/bin in your current working directory.
 
-## Installing dependencies
-
-This project uses `pip` to manage our project's dependencies.
-
-Install dependencies;
+### Installing dependencies
 
 ```sh
 ./scripts/install.sh
 pyenv rehash
 ```
 
-## Formatting
+### Formatting
 
 ```sh
 ./scripts/format.sh
 ```
 
-## Tests
+### Linting and Testing
 
 ```sh
 ./scripts/test.sh
