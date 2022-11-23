@@ -26,6 +26,7 @@ jobs:
           profile: minimal
           toolchain: nightly-2022-11-01
           override: true
+          components: clippy, rustfmt
 
       - name: apt-get update
         run: sudo apt-get update -y
