@@ -1,0 +1,17 @@
+[package]
+name = "rust-python-project-template"
+version = "0.0.0"
+edition = "2021"
+license = "MIT"
+
+[lib]
+name = "rust_python_project_template"
+
+[dependencies]
+log = { version = "0.4.17" }
+
+[dependencies.pyo3]
+version = "0.17.3"
+# "extension-module" tells pyo3 we want to build an extension module (skips linking against libpython.so)
+# "abi3-py37" tells pyo3 (and maturin) to build using the stable ABI with minimum Python version 3.7
+features = ["extension-module", "abi3-py37"]
